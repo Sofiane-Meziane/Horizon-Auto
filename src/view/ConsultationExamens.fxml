@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1605.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConsultationExamensController">
+   <children>
+      <!-- Background Image with Light Blur Effect -->
+      <ImageView fitHeight="903.0" fitWidth="1650.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/openart-c95fdef985624ef8aa18b8ea3addf69f_raw.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="rgba(0, 0, 0, 0.1)" radius="10" />
+         </effect>
+      </ImageView>
+
+      <!-- Title Label -->
+      <Label layoutX="592.0" layoutY="25.0" prefHeight="47.0" prefWidth="398.0" style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0);" text="Consultation des Examens" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="32.0" />
+         </font>
+      </Label>
+
+      <!-- TableView -->
+      <TableView fx:id="ExamensTable" layoutX="154.0" layoutY="136.0" prefHeight="522.0" prefWidth="1258.0" style="-fx-background-radius: 15px; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="140.2667236328125" text="ID" />
+            <TableColumn fx:id="typeExamenColumn" prefWidth="197.33328247070312" text="Type Examen" />
+            <TableColumn fx:id="dateExamenColumn" prefWidth="232.53335571289062" text="Date Examen" />
+            <TableColumn fx:id="lieuColumn" prefWidth="526.4000000000001" text="Lieu" />
+         </columns>
+      </TableView>
+
+      <!-- Return Button -->
+      <Button fx:id="returnbtn" layoutX="41.0" layoutY="32.0" mnemonicParsing="false" onAction="#returnToMain" prefHeight="47.0" prefWidth="70.0" style="-fx-background-color: #3498db; -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); -fx-cursor: hand;">
+         <font>
+            <Font name="Roboto" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/en-arriere.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

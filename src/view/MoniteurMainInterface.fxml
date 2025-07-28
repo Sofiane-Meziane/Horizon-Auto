@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="900.0" prefWidth="1605.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoniteurMainInterfaceController">
+   <children>
+      <!-- Background Image -->
+      <ImageView fitHeight="903.0" fitWidth="1650.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);">
+         <image>
+            <Image url="@../images/openart-c8e1cb093690460caae3764c8797e98e_raw.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+         <AnchorPane.topAnchor>0.0</AnchorPane.topAnchor>
+         <AnchorPane.bottomAnchor>0.0</AnchorPane.bottomAnchor>
+         <AnchorPane.leftAnchor>0.0</AnchorPane.leftAnchor>
+         <AnchorPane.rightAnchor>0.0</AnchorPane.rightAnchor>
+      </ImageView>
+
+      <!-- Title Label -->
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="637.0" layoutY="32.0" prefHeight="135.0" prefWidth="307.0" text="Espace moniteur" style="-fx-font-size: 36px; -fx-text-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);">
+         <font>
+            <Font size="39.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);">
+               <image>
+                  <Image url="@../images/driving.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <AnchorPane.topAnchor>20.0</AnchorPane.topAnchor>
+         <AnchorPane.leftAnchor>0.0</AnchorPane.leftAnchor>
+         <AnchorPane.rightAnchor>0.0</AnchorPane.rightAnchor>
+      </Label>
+
+      <!-- Left Side Button -->
+      <Button fx:id="candidatsbtn" alignment="CENTER" contentDisplay="TOP" layoutX="238.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleCandidatsButtonAction" prefHeight="138.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(to bottom, #4a90d9, #57b8ff); -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); -fx-padding: 15px 30px; -fx-cursor: hand;" text="Candidats">
+         <font>
+            <Font name="Leelawadee" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);">
+               <image>
+                  <Image url="@../images/ancestors.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+
+      <!-- Right Side Button -->
+      <Button fx:id="planningseancesbtn" alignment="CENTER" contentDisplay="TOP" layoutX="1127.0" layoutY="227.0" mnemonicParsing="false" onAction="#handlePlanningSeancesButtonAction" prefHeight="138.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(to bottom, #4a90d9, #57b8ff); -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); -fx-padding: 15px 30px; -fx-cursor: hand;" text="Planning séances">
+         <font>
+            <Font name="Leelawadee" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);">
+               <image>
+                  <Image url="@../images/clock.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

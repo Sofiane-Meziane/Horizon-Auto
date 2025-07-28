@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1605.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminMainInterfaceController">
+   <children>
+      <!-- Background Image -->
+      <ImageView fitHeight="903.0" fitWidth="1650.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);">
+         <image>
+            <Image url="@../images/openart-c95fdef985624ef8aa18b8ea3addf69f_raw.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+         <AnchorPane.topAnchor>0.0</AnchorPane.topAnchor>
+         <AnchorPane.bottomAnchor>0.0</AnchorPane.bottomAnchor>
+         <AnchorPane.leftAnchor>0.0</AnchorPane.leftAnchor>
+         <AnchorPane.rightAnchor>0.0</AnchorPane.rightAnchor>
+      </ImageView>
+
+      <!-- Title Label -->
+      <Label alignment="CENTER" contentDisplay="TOP" style="-fx-font-size: 36px; -fx-text-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);" text="Espace admin">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="74.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admin%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <AnchorPane.topAnchor>20.0</AnchorPane.topAnchor>
+         <AnchorPane.leftAnchor>0.0</AnchorPane.leftAnchor>
+         <AnchorPane.rightAnchor>0.0</AnchorPane.rightAnchor>
+      </Label>
+
+      <!-- Left Side Buttons -->
+      <VBox alignment="CENTER" layoutX="111.0" layoutY="136.0" spacing="30" style="-fx-padding: 20px;" AnchorPane.bottomAnchor="243.20000000000005">
+         <Button fx:id="Paimentsmanagementbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#handlePaimentsButtonAction" prefHeight="140.0" prefWidth="256.8" style="-fx-background-color: linear-gradient(to bottom, #4a90d9, #57b8ff); -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); -fx-padding: 15px 30px; -fx-cursor: hand;" text="Paiements">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);">
+                  <image>
+                     <Image url="@../images/testing.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Leelawadee" size="22.0" />
+            </font>
+         </Button>
+         <Button fx:id="vehiculesmanagementbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleVehiculesButtonAction" prefHeight="140.0" prefWidth="279.2" style="-fx-background-color: linear-gradient(to bottom, #4a90d9, #57b8ff); -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); -fx-padding: 15px 30px; -fx-cursor: hand;" text="Gestion de véhicules" textOverrun="CLIP">
+            <graphic>
+               <ImageView fitHeight="60.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);">
+                  <image>
+                     <Image url="@../images/car.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Leelawadee" size="22.0" />
+            </font>
+         </Button>
+         <Button fx:id="usersmanagementbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleUsersButtonAction" style="-fx-background-color: linear-gradient(to bottom, #4a90d9, #57b8ff); -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); -fx-padding: 15px 30px; -fx-cursor: hand;" text="Gestion des utilisateurs" textOverrun="CLIP">
+            <graphic>
+               <ImageView fitHeight="73.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);">
+                  <image>
+                     <Image url="@../images/ancestors.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Leelawadee" size="22.0" />
+            </font>
+         </Button>
+         <AnchorPane.topAnchor>136.0</AnchorPane.topAnchor>
+         <AnchorPane.leftAnchor>111.0</AnchorPane.leftAnchor>
+      </VBox>
+
+      <!-- Right Side Buttons -->
+      <VBox alignment="CENTER" layoutX="1147.0" layoutY="160.0" spacing="30" style="-fx-padding: 20px;" AnchorPane.bottomAnchor="243.20000000000005">
+         <Button fx:id="examsmanagementbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleExamsButtonAction" style="-fx-background-color: linear-gradient(to bottom, #4a90d9, #57b8ff); -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); -fx-padding: 15px 30px; -fx-cursor: hand;" text="Consulter examens" textOverrun="CLIP">
+            <graphic>
+               <ImageView fitHeight="73.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);">
+                  <image>
+                     <Image url="@../images/exam.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Leelawadee" size="22.0" />
+            </font>
+         </Button>
+         <Button fx:id="coursesmanagementbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleCoursesButtonAction" style="-fx-background-color: linear-gradient(to bottom, #4a90d9, #57b8ff); -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); -fx-padding: 15px 30px; -fx-cursor: hand;" text="Consulter les séances" textOverrun="CLIP">
+            <graphic>
+               <ImageView fitHeight="73.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);">
+                  <image>
+                     <Image url="@../images/hands.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Leelawadee" size="22.0" />
+            </font>
+         </Button>
+         <Button fx:id="candidatsmanagementbtn1" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleCandidatsButtonAction" style="-fx-background-color: linear-gradient(to bottom, #4a90d9, #57b8ff); -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); -fx-padding: 15px 30px; -fx-cursor: hand;" text="Consultation Candidats" textOverrun="CLIP">
+            <graphic>
+               <ImageView fitHeight="73.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);">
+                  <image>
+                     <Image url="@../images/ancestors.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Leelawadee" size="22.0" />
+            </font>
+         </Button>
+         <AnchorPane.topAnchor>160.0</AnchorPane.topAnchor>
+         <AnchorPane.rightAnchor>116.40000000000009</AnchorPane.rightAnchor>
+      </VBox>
+   </children>
+</AnchorPane>

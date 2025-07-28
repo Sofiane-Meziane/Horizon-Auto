@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1605.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GestionSeancesController">
+   <children>
+      <!-- Background Image with Light Blur Effect -->
+      <ImageView fitHeight="903.0" fitWidth="1650.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/4.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="rgba(0, 0, 0, 0.1)" radius="10" />
+         </effect>
+      </ImageView>
+
+      <!-- Title Label -->
+      <Label layoutX="651.0" layoutY="30.0" prefHeight="47.0" prefWidth="330.0" style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0);" text="Gestion des séances" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="32.0" />
+         </font>
+      </Label>
+
+      <!-- Left Side Form Pane -->
+      <Pane layoutX="60.0" layoutY="142.0" prefHeight="458.0" prefWidth="462.0" style="-fx-background-color: rgba(255, 255, 255, 0.95); -fx-background-radius: 15px; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);">
+         <children>
+            <Label layoutX="37.0" layoutY="14.0" prefHeight="34.0" prefWidth="122.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="IdMoniteur">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idMoniteur" layoutX="251.0" layoutY="16.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+
+            <Label layoutX="37.0" layoutY="64.0" prefHeight="34.0" prefWidth="107.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="IdVehicule">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idVehicule" layoutX="251.0" layoutY="66.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+
+            <Label layoutX="37.0" layoutY="114.0" prefHeight="34.0" prefWidth="114.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="IdCandidat">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idEleve" layoutX="251.0" layoutY="116.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+
+            <Label layoutX="37.0" layoutY="164.0" prefHeight="34.0" prefWidth="127.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Date Séance">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DateSeance" layoutX="251.0" layoutY="166.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+
+            <Label layoutX="37.0" layoutY="214.0" prefHeight="34.0" prefWidth="66.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Durée">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Duree" layoutX="251.0" layoutY="216.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+
+            <Label layoutX="37.0" layoutY="264.0" prefHeight="34.0" prefWidth="136.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Type Séance">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TypeSeance" layoutX="251.0" layoutY="266.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+
+            <!-- Buttons -->
+            <Button fx:id="addbtn" layoutX="15.0" layoutY="330.0" mnemonicParsing="false" onAction="#addseance" prefHeight="51.0" prefWidth="125.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); -fx-cursor: hand;" text="Ajouter">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="updatebtn" layoutX="173.0" layoutY="330.0" mnemonicParsing="false" onAction="#updateseance" prefHeight="51.0" prefWidth="125.0" style="-fx-background-color: #3498db; -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); -fx-cursor: hand;" text="Modifier">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="deletebtn" layoutX="318.0" layoutY="330.0" mnemonicParsing="false" onAction="#deleteseance" prefHeight="51.0" prefWidth="125.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); -fx-cursor: hand;" text="Supprimer">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+
+      <!-- Right Side TableView -->
+      <TableView fx:id="SeancesTable" layoutX="613.0" layoutY="144.0" prefHeight="454.0" prefWidth="902.0" style="-fx-background-radius: 15px; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="idMoniteurColumn" prefWidth="99.7332763671875" text="idMoniteur" />
+            <TableColumn fx:id="idVehiculeColumn" prefWidth="95.20001220703125" text="idVehicule" />
+            <TableColumn fx:id="idCandidatColumn" prefWidth="86.4000244140625" text="idCandidat" />
+            <TableColumn fx:id="DateColumn" prefWidth="85.066650390625" text="Date" />
+            <TableColumn fx:id="DureeColumn" prefWidth="126.39990234375" text="Durée" />
+            <TableColumn fx:id="TypeColumn" prefWidth="77.60009765625" text="Type" />
+            <TableColumn fx:id="StatutColumn" prefWidth="77.60009765625" text="Statut" />
+            <TableColumn fx:id="ObservationColumn" prefWidth="174.39999999999998" text="Observation" />
+         </columns>
+      </TableView>
+
+      <!-- Return Button -->
+      <Button fx:id="returnbtn" layoutX="56.0" layoutY="55.0" mnemonicParsing="false" onAction="#returntomain" prefHeight="47.0" prefWidth="70.0" style="-fx-background-color: #3498db; -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); -fx-cursor: hand;">
+         <font>
+            <Font name="Roboto" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/en-arriere.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

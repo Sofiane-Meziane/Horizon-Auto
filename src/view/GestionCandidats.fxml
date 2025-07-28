@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1605.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GestionCandidatsController">
+   <children>
+      <!-- Background Image with Light Blur Effect -->
+      <ImageView fitHeight="903.0" fitWidth="1650.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/4.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="rgba(0, 0, 0, 0.1)" radius="10" />
+         </effect>
+      </ImageView>
+
+      <!-- Title Label -->
+      <Label layoutX="640.0" layoutY="24.0" prefHeight="47.0" prefWidth="330.0" style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0);" text="Gestion des candidats" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="32.0" />
+         </font>
+      </Label>
+
+      <!-- Left Side Form Pane -->
+      <Pane layoutX="34.0" layoutY="185.0" prefHeight="424.0" prefWidth="438.0" style="-fx-background-color: rgba(255, 255, 255, 0.95); -fx-background-radius: 15px; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);">
+         <children>
+            <Label layoutX="34.0" layoutY="19.0" prefHeight="17.0" prefWidth="54.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Nom">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="61.0" prefHeight="34.0" prefWidth="84.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Prenom">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="100.0" prefHeight="34.0" prefWidth="82.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Adresse">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="140.0" prefHeight="17.0" prefWidth="54.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Tel">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="179.0" prefHeight="34.0" prefWidth="59.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Email">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lname" layoutX="241.0" layoutY="23.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+            <TextField fx:id="fname" layoutX="241.0" layoutY="65.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+            <TextField fx:id="adresse" layoutX="241.0" layoutY="103.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+            <TextField fx:id="tel" layoutX="241.0" layoutY="142.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+            <TextField fx:id="email" layoutX="241.0" layoutY="183.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+            <Label layoutX="34.0" layoutY="219.0" prefHeight="34.0" prefWidth="163.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Date inscription">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="260.0" prefHeight="34.0" prefWidth="150.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Montant total">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="299.0" prefHeight="34.0" prefWidth="163.0" style="-fx-text-fill: #34495e; -fx-font-size: 16px;" text="Montant payé">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dateInscription" layoutX="241.0" layoutY="222.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+            <TextField fx:id="montantTotal" layoutX="241.0" layoutY="262.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+            <TextField fx:id="montantPaye" layoutX="240.0" layoutY="302.0" style="-fx-background-radius: 8px; -fx-padding: 8px; -fx-font-size: 14px; -fx-background-color: #f5f6fa; -fx-border-color: #dcdde1; -fx-border-radius: 8px;" />
+            <Button fx:id="deletebtn" layoutX="296.0" layoutY="360.0" mnemonicParsing="false" onAction="#deleteEleve" prefHeight="51.0" prefWidth="133.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); -fx-cursor: hand;" text="Supprimer">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="updatebtn" layoutX="154.0" layoutY="360.0" mnemonicParsing="false" onAction="#updateEleve" prefHeight="51.0" prefWidth="133.0" style="-fx-background-color: #3498db; -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); -fx-cursor: hand;" text="Modifier">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="addbtn" layoutX="10.0" layoutY="360.0" mnemonicParsing="false" onAction="#addEleve" prefHeight="51.0" prefWidth="133.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); -fx-cursor: hand;" text="Ajouter">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+
+      <!-- Right Side TableView -->
+      <TableView fx:id="CandidatsTable" layoutX="515.0" layoutY="185.0" prefHeight="424.0" prefWidth="1000.0" style="-fx-background-radius: 15px; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);">
+         <columns>
+            <TableColumn fx:id="idcolomn" prefWidth="51.7333984375" text="ID" />
+            <TableColumn fx:id="lnamecolomn" prefWidth="92.53338623046875" text="Nom" />
+            <TableColumn fx:id="fnamecolomn" prefWidth="100.0" text="Prenom" />
+            <TableColumn fx:id="AdresseColumn" prefWidth="116.0" text="Adresse" />
+            <TableColumn fx:id="TelColumn" prefWidth="99.4666748046875" text="Tel" />
+            <TableColumn fx:id="EmailColumn" prefWidth="152.0001220703125" text="Email" />
+            <TableColumn fx:id="DateInscriptionColumn" prefWidth="128.2666015625" text="Date Inscription" />
+            <TableColumn fx:id="MontantTotalColumn" prefWidth="124.266845703125" text="Montant Total" />
+            <TableColumn fx:id="MontantPayeColumn" prefWidth="131.733154296875" text="Montant Payé" />
+         </columns>
+      </TableView>
+
+      <!-- Return Button -->
+      <Button fx:id="returnbtn" layoutX="59.0" layoutY="52.0" mnemonicParsing="false" onAction="#returntomain" prefHeight="47.0" prefWidth="70.0" style="-fx-background-color: #3498db; -fx-background-radius: 25px; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0); -fx-cursor: hand;">
+         <font>
+            <Font name="Roboto" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/en-arriere.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
