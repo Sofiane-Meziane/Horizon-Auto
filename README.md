@@ -19,7 +19,7 @@ L'interface est conçue pour être ergonomique et adaptée à chaque rôle au se
 
 | Écran de connexion | Espace Administrateur | Espace Secrétaire | Espace Moniteur |
 | :---: | :---: | :---: | :---: |
-| ![Écran de connexion](placeholder_image_login.png) | ![Tableau de bord de l'administrateur](placeholder_image_admin.png) | ![Interface de la secrétaire](placeholder_image_secretaire.png) | ![Vue du moniteur](placeholder_image_moniteur.png) |
+| ![Écran de connexion](placeholder_image_login.png) | ![Tableau de bord de l'administrateur](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/f8016894bb57cdd88827b4493013975ddf6f96d1/src/images/Design%20sans%20titre%20(5).png) | ![Interface de la secrétaire](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/f8016894bb57cdd88827b4493013975ddf6f96d1/src/images/Design%20sans%20titre%20(6).png) | ![Vue du moniteur](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/f8016894bb57cdd88827b4493013975ddf6f96d1/src/images/Design%20sans%20titre%20(7).png) |
 
 > ### Où et quelles images mettre ?
 >
