@@ -48,7 +48,7 @@ Le logiciel offre des fonctionnalités dédiées à chaque type d'utilisateur po
 * **Langage :** Java
 * **Framework UI :** JavaFX
 * **Architecture :** Modèle-Vue-Contrôleur (MVC) stricte pour une séparation claire des responsabilités.
-* **Base de données :** [MySQL] pour la persistance des données.
+* **Base de données :** MySQL pour la persistance des données.
 
 ---
 
