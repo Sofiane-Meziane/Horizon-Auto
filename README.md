@@ -49,7 +49,6 @@ Le logiciel offre des fonctionnalités dédiées à chaque type d'utilisateur po
 * **Framework UI :** JavaFX
 * **Architecture :** Modèle-Vue-Contrôleur (MVC) stricte pour une séparation claire des responsabilités.
 * **Base de données :** [Précisez votre SGBD, ex: MySQL, PostgreSQL, SQLite] pour la persistance des données.
-* **Build System :** [Précisez votre outil, ex: Maven, Gradle]
 
 ---
 
