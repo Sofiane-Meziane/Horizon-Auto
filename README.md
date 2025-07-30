@@ -19,7 +19,7 @@ L'interface est conçue pour être ergonomique et adaptée à chaque rôle au se
 
 | Écran de connexion | Espace Administrateur | Espace Secrétaire | Espace Moniteur |
 | :---: | :---: | :---: | :---: |
-| ![Écran de connexion](placeholder_image_login.png) | ![Tableau de bord de l'administrateur](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/f8016894bb57cdd88827b4493013975ddf6f96d1/src/images/Design%20sans%20titre%20(5).png) | ![Interface de la secrétaire](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/f8016894bb57cdd88827b4493013975ddf6f96d1/src/images/Design%20sans%20titre%20(6).png) | ![Vue du moniteur](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/f8016894bb57cdd88827b4493013975ddf6f96d1/src/images/Design%20sans%20titre%20(7).png) |
+| ![Écran de connexion](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/a94a04181eae2332f561656615ade7dd5bd7e8d0/src/images/Design%20sans%20titre%20(7).png) | ![Tableau de bord de l'administrateur](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/a94a04181eae2332f561656615ade7dd5bd7e8d0/src/images/Design%20sans%20titre%20(13).png) | ![Interface de la secrétaire](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/a94a04181eae2332f561656615ade7dd5bd7e8d0/src/images/Design%20sans%20titre%20(5).png) | ![Vue du moniteur](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/a94a04181eae2332f561656615ade7dd5bd7e8d0/src/images/Design%20sans%20titre%20(6).png) |
 
 > ### Où et quelles images mettre ?
 >
