@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-![Bannière de présentation du logiciel](placeholder_image_banniere.png)
+![Bannière de présentation du logiciel](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/f074b68dcb176d98055e8699dfd88e5561efafc9/src/images/Design%20sans%20titre%20(6).png)
 > **Note :** Pour la bannière, créez une image en mode paysage. Elle pourrait montrer le nom de votre application, un logo (même simple comme un volant ou une voiture), et une capture d'écran estompée en arrière-plan. C'est très professionnel.
 
 ---
