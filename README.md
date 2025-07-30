@@ -48,7 +48,7 @@ Le logiciel offre des fonctionnalités dédiées à chaque type d'utilisateur po
 * **Langage :** Java
 * **Framework UI :** JavaFX
 * **Architecture :** Modèle-Vue-Contrôleur (MVC) stricte pour une séparation claire des responsabilités.
-* **Base de données :** [Précisez votre SGBD, ex: MySQL, PostgreSQL, SQLite] pour la persistance des données.
+* **Base de données :** [MySQL] pour la persistance des données.
 
 ---
 
@@ -58,8 +58,8 @@ Instructions pour compiler et lancer le projet localement.
 
 **Pré-requis :**
 * JDK 11 ou supérieur
-* [Maven/Gradle]
-* [Votre SGBD]
+* NetBeans IDE version 8.2 ou plus récente recommandée.
+* Serveur de Base de Données MySQL doit être installé et en cours d'exécution.
 
 **Étapes :**
 1.  Clonez le repository :
