@@ -21,14 +21,6 @@ L'interface est conçue pour être ergonomique et adaptée à chaque rôle au se
 | :---: | :---: | :---: | :---: |
 | ![Écran de connexion](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/a94a04181eae2332f561656615ade7dd5bd7e8d0/src/images/Design%20sans%20titre%20(7).png) | ![Tableau de bord de l'administrateur](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/ea93dfa1e1a65e3fe6f5c0cec73cc9d2254a6da5/src/images/ecran%20admin.png) | ![Interface de la secrétaire](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/a94a04181eae2332f561656615ade7dd5bd7e8d0/src/images/Design%20sans%20titre%20(5).png) | ![Vue du moniteur](https://github.com/Sofiane-Meziane/Horizon-Auto/blob/a94a04181eae2332f561656615ade7dd5bd7e8d0/src/images/Design%20sans%20titre%20(6).png) |
 
-> ### Où et quelles images mettre ?
->
-> 1.  **placeholder_image_banniere.png**: Votre bannière principale (créez-la sur un outil comme Canva).
-> 2.  **placeholder_image_login.png**: La fenêtre de connexion où l'utilisateur choisit son rôle.
-> 3.  **placeholder_image_admin.png**: Une capture de l'espace Admin, montrant par exemple la **liste des utilisateurs ou des véhicules**. C'est le point fort de cet espace.
-> 4.  **placeholder_image_secretaire.png**: La vue la plus importante de cet espace, probablement la **planification des séances** (un calendrier ou un agenda) ou le **formulaire d'ajout d'un candidat**.
-> 5.  **placeholder_image_moniteur.png**: L'écran principal du moniteur, affichant son **planning de la journée/semaine** ou la liste de ses élèves avec leur progression.
-
 ---
 
 ## 🚀 Fonctionnalités par rôle
