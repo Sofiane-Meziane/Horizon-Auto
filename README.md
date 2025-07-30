@@ -62,9 +62,9 @@ Instructions pour compiler et lancer le projet localement.
 * Serveur de Base de Données MySQL doit être installé et en cours d'exécution.
 
 **Étapes :**
-1.  Clonez le repository : https://github.com/Sofiane-Meziane/Horizon-Auto.git
+1.  Clonez le repository :
     ```sh
-    git clone [URL_DE_VOTRE_REPO]
+    git clone https://github.com/Sofiane-Meziane/Horizon-Auto.git
     ```
 2.  Configurez la connexion à la base de données dans `[chemin/vers/fichier/de/config.properties]`.
 3.  Compilez le projet :
