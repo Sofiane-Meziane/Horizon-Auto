@@ -64,7 +64,7 @@ Instructions pour compiler et lancer le projet localement.
 **Étapes :**
 1.  Clonez le repository :
     ```sh
-    git clone [URL_DE_VOTRE_REPO]
+    git clone [[URL_DE_VOTRE_REPO](https://github.com/Sofiane-Meziane/Horizon-Auto.git)]
     ```
 2.  Configurez la connexion à la base de données dans `[chemin/vers/fichier/de/config.properties]`.
 3.  Compilez le projet :
