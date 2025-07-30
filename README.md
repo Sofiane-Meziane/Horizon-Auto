@@ -65,7 +65,7 @@ Ce projet a été développé avec l'IDE NetBeans. La manière la plus simple de
 ### Étapes d'installation
 1.  **Clonez le repository** sur votre machine locale :
     ```sh
-    git clone [https://github.com/Sofiane-Meziane/Horizon-Auto.git](https://github.com/Sofiane-Meziane/Horizon-Auto.git)
+    git clone https://github.com/Sofiane-Meziane/Horizon-Auto.git
     ```
 2.  **Importez la base de données** :
     * Démarrez votre serveur MySQL.
