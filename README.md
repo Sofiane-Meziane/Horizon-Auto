@@ -79,7 +79,7 @@ Ce projet a été développé avec l'IDE NetBeans. La manière la plus simple de
     * Naviguez jusqu'au dossier `Horizon-Auto` que vous venez de cloner et sélectionnez-le.
 
 4.  **Vérifiez la connexion à la base de données** :
-    * Ouvrez le fichier `src/Utils/DataSource.java`.
+    * Ouvrez le fichier `src/dao/DatabaseConnection.java`.
     * Vérifiez que le nom d'utilisateur (`user`) et le mot de passe (`password`) correspondent à votre configuration MySQL locale. Par défaut, ils sont sur `"root"` et `""` (vide).
 
 5.  **Lancez l'application** :
